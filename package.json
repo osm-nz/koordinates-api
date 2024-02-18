@@ -1,0 +1,35 @@
+{
+  "name": "koordinates-api",
+  "version": "0.0.0",
+  "contributors": [
+    "Kyle Hensel (https://github.com/k-yle)"
+  ],
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/osm-api/koordinates-api",
+  "scripts": {
+    "build": "rm -rf dist && tsc && rm -rf dist/__tests__",
+    "lint": "eslint --ignore-path .gitignore .",
+    "trypublish": "npm publish || true"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "tempfile": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "eslint": "^8.56.0",
+    "eslint-config-kyle": "^19.1.0",
+    "typescript": "^5.3.3"
+  },
+  "eslintConfig": {
+    "extends": "kyle"
+  },
+  "prettier": "eslint-config-kyle/prettier"
+}
