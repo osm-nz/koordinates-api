@@ -10,7 +10,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/osm-api/koordinates-api",
+  "repository": "https://github.com/osm-nz/koordinates-api",
   "scripts": {
     "build": "rm -rf dist && tsc && rm -rf dist/__tests__",
     "lint": "eslint --ignore-path .gitignore .",
