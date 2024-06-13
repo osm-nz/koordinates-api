@@ -14,7 +14,7 @@
   "scripts": {
     "build": "rm -rf dist && tsc && rm -rf dist/__tests__",
     "lint": "eslint --ignore-path .gitignore .",
-    "trypublish": "npm publish || true"
+    "trypublish": "npm publish --provenance || true"
   },
   "engines": {
     "node": ">=18"
